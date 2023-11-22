@@ -92,6 +92,7 @@ body.dark{
 .sidebar header .image-text{
     display: flex;
     align-items: center;
+    margin-left: 15%;
 }
 .sidebar header .logo-text{
     display: flex;
