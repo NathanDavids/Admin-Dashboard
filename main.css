@@ -37,27 +37,30 @@ body.dark{
     --toggle-color: #fff;
     --text-color:#ccc;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
-    padding: 10px 14px;
+    width: 230px;
+    padding: 10px 28px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
 }
 .sidebar.close{
-    width: 88px;
+    width: 80px;
 }
 .sidebar li{
     height: 50px;
+    width: 100%;
     list-style: none;
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
+
 .sidebar header .image, 
 .sidebar .icon{
     min-height: 60px;
@@ -82,6 +85,7 @@ body.dark{
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
+    margin-left: 10px;
 }
 .sidebar.close .text{
     opacity: 0;
@@ -92,7 +96,6 @@ body.dark{
 .sidebar header .image-text{
     display: flex;
     align-items: center;
-    margin-left: 15%;
 }
 .sidebar header .logo-text{
     display: flex;
@@ -120,7 +123,7 @@ header .image-text .profession{
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
-    right: -25px;
+    right: -40px;
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
@@ -141,23 +144,6 @@ body.dark .sidebar header .toogle{
 }
 .sidebar .menu{
     margin-top: 60px;
-}
-.sidebar li .search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
-}
-.sidebar li .search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 17px;
-    background-color: var(--primary-color-light);
-    border-radius: 6px;
-    font-weight: 500;
-    transition: var(--tran-05);
 }
 .sidebar li a{
     list-style: none;
@@ -197,23 +183,6 @@ body.dark .sidebar li a:hover .text{
     justify-content: space-between;
     overflow: scroll;
 }
-.menu-bar .mode .sun-moon{
-    height: 50px;
-    width: 60px;
-}
-.mode .sun-moon i{
-    position: absolute;
-}
-.mode .sun-moon i.sun{
-    opacity: 0;
-}
-body.dark .mode .sun-moon i.sun{
-    opacity: 1;
-}
-
-body.dark .mode .sun-moon i.moon{
-    opacity: 0;
-}
 
 .menu-bar .bottom-content .toggle-switch{
     position: absolute;
@@ -226,7 +195,7 @@ body.dark .mode .sun-moon i.moon{
     border-radius: 6px;
     cursor: pointer;
 }
-.toggle-switch .switch{
+/* .toggle-switch .switch{
     position: relative;
     height: 22px;
     width: 40px;
@@ -248,7 +217,7 @@ body.dark .mode .sun-moon i.moon{
 }
 body.dark .switch::before{
     left: 20px;
-}
+} */
 .home{
     position: absolute;
     top: 0;
@@ -271,4 +240,45 @@ body.dark .switch::before{
 }
 body.dark .home .text{
     color: var(--text-color);
+}
+
+.hackathon{
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    height: 33%;
+    background-color: blue;
+}
+
+.post{
+    position: absolute;
+    left: 400px;
+    width: 300px;
+    height: 33%;
+    background-color: blue;
+}
+
+.scorecard{
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    background-color: blue;
+    width: 650px;
+    height: 50%;
+}
+
+.generalChat{
+    position: absolute;
+    left: 750px;
+    width: 300px;
+    height: 90%;
+    background-color: blue;
+}
+
+.teamChat{
+    position: absolute;
+    left: 1100px;
+    width: 300px;
+    height: 90%;
+    background-color: blue;
 }
